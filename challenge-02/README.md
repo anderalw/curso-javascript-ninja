@@ -71,8 +71,25 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+ function value(a, b, c) {
+  if( a!== undefined && b === undefined && b === undefined) {
+     return a;
+  } else if( a !== undefined &&  b !== undefined && c === undefined) {
+     return a + b;
+  } else if( a !== undefined && b !== undefined && c !== undefined) {
+     return ( a + b) / c;
+  } else if( a === undefined && b === undefined && c === undefined) {
+     return false;
+  } else  {
+  return null; 
+    }
+}
+
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+value() //false
+value(2) //2
+value(2,3) //5
+value(2,3,5) //1
+
 ```
